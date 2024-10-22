@@ -47,6 +47,11 @@ https://peps.python.org/pep-0008/#function-and-method-arguments
 using a set to check subset of valid characters
 https://www.tutorialspoint.com/how-to-check-if-a-string-only-contains-certain-characters-in-python
 
+check at least one of each category
+https://www.geeksforgeeks.org/python-program-to-check-if-a-string-has-at-least-one-letter-and-one-number/
+
 does a set contain an element
 https://www.geeksforgeeks.org/how-to-check-if-a-set-contains-an-element-in-python/
 
+load lines from file into a set
+https://stackoverflow.com/questions/874017/python-load-words-from-file-into-a-set

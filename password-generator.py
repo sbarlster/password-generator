@@ -15,7 +15,23 @@ def check_password_rules(password):
         raise RuntimeError('password contains an invalid character, password is: {}'.format(password))
     
     # must have at least one of each of the categories
+    lower_case = set(string.ascii_lowercase)
+    upper_case = set(string.ascii_uppercase)
+    digits = set(string.digits)
+    special_chars = set(string.punctuation)
+
+    if not bool(special_chars & password_set):
+        raise RuntimeError('password {} does not contain at least one special character'.format(password))
     
+    if not bool(digits & password_set):
+        raise RuntimeError('password {} does not containat least one digit'.format(password))
+    
+    if not bool(lower_case & password_set):
+        raise RuntimeError('password {} does not containat least one lower case character'.format(password))
+    
+    if not bool(upper_case & password_set):
+        raise RuntimeError('password {} does not containat least one upper case character'.format(password))
+
 
 def check_password_unique(password):
     # load previous passwords from file
