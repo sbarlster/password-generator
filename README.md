@@ -19,6 +19,11 @@ Usage
 password-generator <user supplied password> -r <FLAG to generate a random password>
 ```
 
+Todo
+====
+
+* ask user to enter password twice
+
 
 Articles that helped
 ====================
